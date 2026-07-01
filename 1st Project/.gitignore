@@ -1,0 +1,5 @@
+# Ignore video files
+*.mp4
+
+# Ignore large media files
+media/*.mp4
