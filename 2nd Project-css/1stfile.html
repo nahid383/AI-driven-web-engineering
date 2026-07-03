@@ -4,31 +4,32 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Nahid Hasan</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <nav>
-        <ul>
-            <li><a href="#">Home</a></li>
-            <li><a href="#">About</a></li>
-            <li><a href="#">Services</a></li>
-            <li><a href="#">Contact</a></li>
+    <nav class="main-nav">
+        <ul class="nav-list">
+            <li><a class="nav-link" href="#home">Home</a></li>
+            <li><a class="nav-link" href="#about">About</a></li>
+            <li><a class="nav-link" href="#services">Services</a></li>
+            <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
     </nav>
-    <header>
-        <h1 style="color: blue;">Welcome to My Website</h1>
-        <p style="height: fit-content;">This is a simple HTML template with a navigation bar.</p>
+    <header class="site-header" id="home">
+        <h1>Welcome to My Website</h1>
+        <p>This is a simple HTML template with a navigation bar.</p>
     </header>
-    <main>
-        <section>
-            <h2 style="color: deeppink;">About Me</h2>
-            <p style="text-align: justify;">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+    <main id="main-content">
+        <section class="content-section" id="about">
+            <h2>About Me</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
         </section>
-        <section>
-            <h2 style="color: deeppink;">Services</h2>
-            <p style="text-align: left;">We offer a variety of services to help you achieve your goals. Contact us for more information.</p>
+        <section class="content-section" id="services">
+            <h2>Services</h2>
+            <p>We offer a variety of services to help you achieve your goals. Contact us for more information.</p>
         </section>
     </main>
-    <footer>
+    <footer class="site-footer" id="contact">
         <p>&copy; 2026 Nahid Hasan. All rights reserved.</p>
     </footer>
 </body>
