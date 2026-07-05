@@ -1,0 +1,15 @@
+nav ul{
+    display: flex;
+        list-style: none;
+}
+
+nav ul li a{
+    margin: 0 10px;
+    text-decoration: none;
+}
+
+nav ul li a:hover{
+    color: rgb(15, 3, 43);
+    font-weight: bold;
+    background-color: rgb(61, 146, 161);
+}
