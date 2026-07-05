@@ -1,0 +1,64 @@
+.item{
+    border: 2px solid red;
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+    text-align: center;
+}
+
+.container{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user-container{
+    /* border: 1px solid black; */
+    display: flex;
+    margin-top: 1px;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.user{
+    border: 2px solid rgb(15, 3, 43);
+    height: 50px;
+    width: 50px;
+    margin: 1px;
+    text-align: center;
+}
+
+/* Responsive Design */
+
+/* Mobile devices (screens smaller than 600px) */
+@media (max-width: 600px) {
+    .container, .user-container {
+        justify-content: center;
+    }
+    
+    .item, .user {
+        width: 80px;
+        height: 80px;
+        margin: 5px;
+    }
+}
+
+/* Tablets (600px to 900px) */
+@media (min-width: 601px) and (max-width: 900px) {
+    .item, .user {
+        width: 60px;
+        height: 60px;
+        margin: 3px;
+    }
+}
+
+/* Large screens (900px and above) */
+@media (min-width: 901px) {
+    .item, .user {
+        width: 50px;
+        height: 50px;
+        margin: 1px;
+    }
+}
