@@ -160,3 +160,76 @@ ul li a{
 .what-i-do-card .card h2{
     margin: 10px 0;
 }
+
+.resume-section{
+    margin: 70px auto;
+    text-align: center;
+}
+
+.resume-section h2{
+    margin-bottom: 15px;
+}
+
+.resume-intro{
+    max-width: 800px;
+    margin: 0 auto 40px;
+    font-size: 18px;
+    color: #555;
+}
+
+.resume-grid{
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.resume-column{
+    flex: 1 1 45%;
+    min-width: 280px;
+    text-align: left;
+}
+
+.resume-column h3{
+    margin-bottom: 20px;
+    font-size: 24px;
+}
+
+.resume-card{
+    padding: 25px 20px;
+    border-bottom: 1px solid #e3e3e3;
+}
+
+.resume-card.no-border{
+    border-bottom: none;
+}
+
+.resume-card h4{
+    margin-bottom: 8px;
+    font-size: 20px;
+}
+
+.resume-card .subtitle{
+    margin-bottom: 12px;
+    color: #777;
+    font-size: 16px;
+}
+
+.resume-card p{
+    font-size: 15px;
+    line-height: 1.7;
+}
+
+.resume-cta{
+    margin-top: 40px;
+}
+
+@media screen and (max-width: 900px) {
+    .resume-grid{
+        flex-direction: column;
+    }
+
+    .resume-column{
+        min-width: 100%;
+    }
+}
