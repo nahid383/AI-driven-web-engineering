@@ -93,3 +93,27 @@ ul li a{
 .hero-parent-btn{
     margin-top: 20px;
 }
+
+.about-parent{
+    background-color: #fff8f3;
+    margin: 70px auto;
+    border-radius: 10px;
+    padding: 85px;
+    text-align: center;
+}
+
+.about-parent p{
+    margin: 10px 0;
+}
+
+.about-box-parent{
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+}
+
+.about-box-parent .box{
+    background-color: #fff8f3;
+    padding: 5px;
+    border-radius: 5px;
+}
