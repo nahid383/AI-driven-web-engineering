@@ -19,3 +19,8 @@ while(j<=5){
     console.log("While loop running for the " , j , "th time");
     j++;
 }
+
+//multiplication table
+for(let i=1; i<=10; i++)[
+    console.log(5, "X", 1, "=", 5*i)
+]
