@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Practice</title>
+
+    <style>
+        *{
+            margin:0;
+            padding:0;
+            box-sizing:border-box;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+
+        body{
+            background:#f5f5f5;
+            padding:40px;
+        }
+
+        h1{
+            text-align:center;
+            color:#333;
+            margin-bottom:30px;
+        }
+
+        .container{
+            max-width:900px;
+            margin:auto;
+            display:grid;
+            grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+            gap:20px;
+        }
+
+        .card{
+            background:white;
+            padding:20px;
+            border-radius:12px;
+            box-shadow:0 4px 10px rgba(0,0,0,.1);
+            text-align:center;
+            transition:.3s;
+        }
+
+        .card:hover{
+            transform:translateY(-5px);
+        }
+
+        h2{
+            margin-bottom:10px;
+            color:#222;
+        }
+
+        p{
+            color:#666;
+            margin-bottom:20px;
+        }
+
+        .btn{
+            display:inline-block;
+            text-decoration:none;
+            background:#0078ff;
+            color:white;
+            padding:10px 18px;
+            border-radius:8px;
+            transition:.3s;
+        }
+
+        .btn:hover{
+            background:#005fd1;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>📘 JavaScript Practice Files</h1>
+
+    <div class="container">
+
+        <div class="card">
+            <h2>🚀 First Program</h2>
+            <p>JavaScript Basics</p>
+            <a class="btn" href="./1st.js">Open File</a>
+        </div>
+
+        <div class="card">
+            <h2>📄 Variables</h2>
+            <p>JavaScript Variables Examples</p>
+            <a class="btn" href="./variable.js">Open File</a>
+        </div>
+
+        <div class="card">
+            <h2>➕ Math Operations</h2>
+            <p>Arithmetic Operators</p>
+            <a class="btn" href="./mathoperation.js">Open File</a>
+        </div>
+
+        <div class="card">
+            <h2>🔀 Conditions</h2>
+            <p>if, else, switch Examples</p>
+            <a class="btn" href="./condition.js">Open File</a>
+        </div>
+
+        <div class="card">
+            <h2>🔁 Loops</h2>
+            <p>for, while, do...while</p>
+            <a class="btn" href="./loop.js">Open File</a>
+        </div>
+
+    </div>
+
+</body>
+</html>
