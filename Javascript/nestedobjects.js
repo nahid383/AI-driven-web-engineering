@@ -208,4 +208,4 @@ console.log("Object.entries():", Object.entries(student));
 
 console.log("Optional Chaining:", student.contact?.email);
 
-console.log("Nested Object Access:", student.skills.web.backend[1]);
+console.log("Nested Object Access:", student.skills.web.backend[1]);whatsapp
