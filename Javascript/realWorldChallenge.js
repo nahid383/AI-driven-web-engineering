@@ -42,3 +42,58 @@ let students = [
     {name : "Ankit", marks : 65}
 ]
 addGrade(students)
+
+/*
+Problem 2 : Cart Summary
+
+You have an array of cart items, each with a name, price, and quantity.
+Write a function that returns a new cart summary without modifying
+the original array.
+*/
+
+const cartSummary = (cart) => {
+
+    console.log("cart\n.....................................\n")
+    console.log(cart)
+    console.log("\n.....................................\n")
+
+    const modifiedCart = cart.map(item => {
+
+        const newItem = {
+            name: item.name,
+            price: item.price,
+            quantity: item.quantity
+        }
+
+        newItem.total = item.price * item.quantity
+
+        return newItem
+    })
+
+    let grandTotal = 0
+
+    modifiedCart.forEach(item => {
+        grandTotal += item.total
+    })
+
+    console.log("Modified Cart:")
+    console.log(modifiedCart)
+
+    console.log("\nGrand Total:")
+    console.log(grandTotal)
+
+    return {
+        items: modifiedCart,
+        grandTotal: grandTotal
+    }
+}
+
+
+let cart = [
+    { name: "Laptop", price: 50000, quantity: 1 },
+    { name: "Mouse", price: 1000, quantity: 2 },
+    { name: "Keyboard", price: 2000, quantity: 1 },
+    { name: "Headphone", price: 3000, quantity: 2 }
+]
+
+cartSummary(cart)
