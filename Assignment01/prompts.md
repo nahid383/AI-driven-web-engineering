@@ -1,0 +1,1 @@
+I'm building a modern developer conference landing page using only HTML and CSS. The page currently has these sections in order: Navbar, Banner, Meet the Speakers, Pricing Plans. i need a relevant missing section after those part
