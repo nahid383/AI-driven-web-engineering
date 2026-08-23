@@ -4,6 +4,7 @@
 2. array
 3. function
 */
+Object.defineProperty(exports, "__esModule", { value: true });
 const destination = 'Naogaon';
 const cycles = 2;
 const districts = ['Naogaon', 'Rajshahi', 'Sylhet', 'Dhaka'];
@@ -17,3 +18,4 @@ function buyBook(title, price, discount) {
     return `The book ${title} costs ${price - discount}`;
 }
 console.log(buyBook('CP', 240, 190));
+//# sourceMappingURL=Recap.js.map

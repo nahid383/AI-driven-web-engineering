@@ -1,3 +1,5 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
 const user = {
     name: 'Nahid Hasan',
     age: 21,
@@ -8,4 +10,4 @@ const user = {
 // const {age, name} = {name:'Nahid Hasan', age:21}
 const { age, name } = user;
 console.log(age, name);
-export {};
+//# sourceMappingURL=destructing.js.map
