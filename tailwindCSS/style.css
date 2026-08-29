@@ -1,0 +1,14 @@
+.test{
+    font-size: 70px;
+    background-color: red;
+    color: aqua;
+}
+
+@media (max-width:800px){
+    .test{
+    font-size: 30px;
+    background-color: yellow;
+    color: ghostwhite;
+    -webkit-text-stroke: 2px black;
+}
+}

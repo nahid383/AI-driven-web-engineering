@@ -1,19 +1,162 @@
 <!doctype html>
+
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
 
-    <!-- Tailwind CDN -->
+    <title>Gold Kinen</title>
+
+    <!-- Tailwind CSS -->
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="./style.css" />
+    ```
   </head>
-  <body>
-    <h1 class="text-indigo-900 bg-slate-900">Hello Tailwind</h1>
-    <h2
-      class="w-full h-[50px] bg-[url('https://static.vecteezy.com/system/resources/thumbnails/054/876/032/small/mirror-image-snow-capped-mountain-peaks-reflected-in-pristine-lake-free-photo.jpg')] bg-cover bg-center bg-no-repeat text-amber-500"
+
+  <body class="bg-slate-100">
+    ```
+    <!-- Heading -->
+    <h1
+      class="bg-slate-900 text-indigo-400 text-[40px] md:text-[80px] font-bold text-center py-4"
     >
-      Welcome to Gold Kinen
-    </h2>
+      Hello Tailwind
+    </h1>
+
+    <!-- Hero Section -->
+    <section
+      class="w-full h-64 md:h-96 bg-[url('https://static.vecteezy.com/system/resources/thumbnails/054/876/032/small/mirror-image-snow-capped-mountain-peaks-reflected-in-pristine-lake-free-photo.jpg')] bg-cover bg-center bg-no-repeat flex items-center justify-center"
+    >
+      <h2
+        class="text-amber-400 text-[35px] md:text-[70px] font-bold text-center drop-shadow-lg"
+      >
+        Welcome to Gold Kinen
+      </h2>
+    </section>
+
+    <!-- Description -->
+    <section class="py-8 text-center">
+      <h2 class="text-2xl md:text-4xl font-bold text-slate-800">
+        A trusted gold buy and sell platform
+      </h2>
+    </section>
+
+    <!-- Flex Layout -->
+    <section class="py-6">
+      <h2 class="text-4xl text-amber-500 font-bold text-center mb-6">
+        Layout Using Flex
+      </h2>
+
+      <div class="flex flex-col md:flex-row gap-6 px-4">
+        <div
+          class="h-64 w-full bg-green-400 rounded-2xl p-4 border-4 border-amber-900 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 1
+        </div>
+
+        <div
+          class="h-64 w-full bg-green-400 rounded-2xl p-4 border-4 border-amber-900 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 2
+        </div>
+
+        <div
+          class="h-64 w-full bg-green-400 rounded-2xl p-4 border-4 border-amber-900 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 3
+        </div>
+
+        <div
+          class="h-64 w-full bg-green-400 rounded-2xl p-4 border-4 border-amber-900 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 4
+        </div>
+      </div>
+    </section>
+
+    <!-- Grid Layout -->
+    <section class="py-6">
+      <h2 class="text-4xl text-amber-500 font-bold text-center mb-6">
+        Layout Using Grid
+      </h2>
+
+      <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 p-4">
+        <div
+          class="h-64 bg-purple-400 rounded-2xl p-4 border-4 border-blue-800 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 1
+        </div>
+
+        <div
+          class="h-64 bg-purple-400 rounded-2xl p-4 border-4 border-purple-800 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 2
+        </div>
+
+        <div
+          class="h-64 bg-purple-400 rounded-2xl p-4 border-4 border-orange-800 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 3
+        </div>
+
+        <div
+          class="h-64 bg-purple-400 rounded-2xl p-4 border-4 border-pink-800 flex justify-center items-center font-bold text-3xl"
+        >
+          Card 4
+        </div>
+      </div>
+    </section>
+
+    <!-- Custom Grid Layout -->
+    <section class="p-4 md:p-8">
+      <h2 cl ass="text-4xl text-amber-500 font-bold text-center mb-8">
+        Custom Grid Layout
+      </h2>
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 auto-rows-[150px]">
+        <!-- Card 1: 2 columns + 2 rows -->
+        <div
+          class="md:col-span-2 md:row-span-2 bg-green-400 rounded-2xl border-4 border-green-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 1
+        </div>
+        <!-- Card 2: 1 column + 1 row -->
+        <div
+          class="md:col-span-1 md:row-span-1 bg-blue-400 rounded-2xl border-4 border-blue-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 2
+        </div>
+        <!-- Card 3: 1 column + 1 row -->
+        <div
+          class="md:col-span-1 md:row-span-1 bg-purple-400 rounded-2xl border-4 border-purple-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 3
+        </div>
+        <!-- Card 4: 2 columns -->
+        <div
+          class="md:col-span-2 md:row-span-1 bg-orange-400 rounded-2xl border-4 border-orange-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 4
+        </div>
+        <!-- Card 5: 1 column + 1 row -->
+        <div
+          class="md:col-span-1 md:row-span-1 bg-pink-400 rounded-2xl border-4 border-pink-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 5
+        </div>
+        <!-- Card 6: 1 column + 1 row -->
+        <div
+          class="md:col-span-1 md:row-span-1 bg-yellow-400 rounded-2xl border-4 border-yellow-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 6
+        </div>
+        <!-- Card 7: Full width -->
+        <div
+          class="md:col-span-4 md:row-span-1 bg-red-400 rounded-2xl border-4 border-red-800 flex items-center justify-center font-bold text-3xl"
+        >
+          Card 7 - Full Width
+        </div>
+      </div>
+    </section>
   </body>
 </html>
