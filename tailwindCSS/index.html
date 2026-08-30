@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
     <title>Nature's Platter</title>
 
     <!-- Tailwind CDN -->
@@ -23,11 +24,12 @@
       rel="stylesheet"
     />
   </head>
+
   <body>
-    <!-- <h2>Nature's Platter</h2> -->
-    <header>
+    <header class="font-[Sora]">
+      <!-- Navbar -->
       <nav
-        class="grid grid-cols-3 items-center justify-center bg-amber-50 container mx-auto pt-5"
+        class="container mx-auto grid grid-cols-3 items-center bg-amber-50 pt-5"
       >
         <img src="assets/nav-logo.png" alt="Navbar Logo" />
 
@@ -37,26 +39,40 @@
           <li>Contact us</li>
         </ul>
 
-        <div class="flex gap-4">
-          <span><i class="fa-solid fa-magnifying-glass"></i></span>
-          <span><i class="fa-solid fa-cart-shopping"></i></span>
+        <div class="flex items-center justify-end gap-4">
+          <span>
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </span>
+
+          <span>
+            <i class="fa-solid fa-cart-shopping"></i>
+          </span>
+
           <button
-            class="rounded-2xl border border-green-400 font-semibold px-3 py-1"
+            class="rounded-2xl border border-green-400 px-3 py-1 font-semibold"
           >
             Login
           </button>
+
           <button
-            class="rounded-2xl bg-green-400 text-white font-semibold px-3 py-1"
+            class="rounded-2xl bg-green-400 px-3 py-1 font-semibold text-white"
           >
             Register
           </button>
         </div>
       </nav>
 
-      <section class="flex flex-col items-center justify-center text-center">
+      <!-- Hero Section -->
+      <section
+        class="mx-auto flex flex-col items-center justify-center bg-gradient-to-b from-transparent to-[#EFEBE3] pt-5 text-center"
+      >
         <h2 class="text-6xl font-bold">
-          Freshness <span class="text-green-500">You Can<br />Count</span> On,
-          Prices You’ll Love!
+          Freshness
+          <span class="text-green-500">
+            You Can<br />
+            Count
+          </span>
+          On, Prices You’ll Love!
         </h2>
 
         <p class="mt-4 max-w-2xl">
@@ -65,6 +81,37 @@
         </p>
 
         <img src="assets/Hero Section 1.png" alt="Big Basket" class="mt-6" />
+      </section>
+
+      <!-- Services Section -->
+      <section class="container mx-auto my-[80px]">
+        <h2 class="text-green-500 font-bold text-4xl mb-3">Services</h2>
+        <div class="grid grid-cols-3 gap-4">
+          <div class="text-center bg-[#efebe3] rounded-md p-4">
+            <img src="assets/service.png" alt="Services" class="max-auto"/>
+            <h3 class="font-semibold text-2xl">24/7 Services</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <div class="text-center bg-[#efebe3] rounded-md p-4">
+            <img src="assets/delivery.png" alt="Delivery" class="max-auto"/>
+            <h3 class="font-semibold text-2xl">Fast Delivery</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+          <div class="text-center bg-[#efebe3] rounded-md p-4">
+            <img src="assets/products.png" alt="Products" class="max-auto">
+            <h3 class="font-semibold text-2xl">Healthy Products </h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+              eiusmod tempor incididunt
+            </p>
+          </div>
+        </div>
       </section>
     </header>
   </body>
